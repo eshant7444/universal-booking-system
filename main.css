@@ -1,0 +1,155 @@
+*{
+    padding:0px;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0px 0px 0px ;
+    background-color: gold;
+}
+.img{
+    position: relative;
+    display: block;
+    padding: 7px 0 0 0;
+    
+}
+.img:hover{
+    filter: contrast(100);
+}
+.hh{
+    font-family:"Segoe Script";
+    font-size:30px;
+    display: inline-block;
+    position: relative;
+}
+.hh:hover{
+    color: indigo;
+    text-decoration: underline;
+}
+.lgn{
+    padding: 40px 17px 0px 0px;
+}
+.log1{
+    border: none;
+    font-size: 30px;
+    font-family:"Comic Sans Ms";
+    position: relative;
+    width: auto;
+    height: 75px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: maroon;
+    color: whitesmoke;
+    position: right;
+}    
+.log1:hover{
+    background-color: tomato;
+    color:white;
+}
+.panel{
+    width: 100%;
+    padding: 15px 0px 15px 0px;
+    border: 2;
+    background-color:greenyellow;
+    opacity: 0.6;
+    position: relative;
+    color: blue;
+    display:flex;
+    justify-content: space-around;   
+    
+}
+.drp_btn{
+    font-size:25px;
+    padding: 5px 25px;
+    background-color: greenyellow;
+    color:blue;
+    border:none;
+    cursor: pointer;
+}    
+.drp_btn:hover{
+    background-color: black;
+    border-radius: 5px;
+    color:white
+}
+.drp_dn{
+    position: relative;
+    display: inline-block;      
+}
+.drp_dnc{
+  display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(99,55,55,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  width:auto;
+  background-color:greenyellow;
+  color:red;
+  border: 1px;
+  
+}
+.drp_dnc a{
+    padding: 12px 16px;
+    text-decoration: none;
+    display:block;
+    font-size: 20px;
+    
+}
+.drp_dnc a:hover{
+    background-color: black;
+    color:white;
+
+}
+.drp_dn:hover .drp_dnc{
+    display: inline-block;
+    visibility: visible;
+}
+.marquee1{
+    background-color: aquamarine;
+    color:red;
+    width: 100%;
+    height: auto;
+}
+.f1{
+border:2;
+width:100%;
+height:auto;
+background-color:#E4F9F5;
+position: absolute;
+opacity:0.6;
+color:black;
+background-image: url(1.jpg);
+}
+.head1{
+    font-family: "Segoe Script" ;
+    font-size: xx-large;
+    text-align:center;
+}
+.rdo{
+    font-size: 20px;
+    text-align: center;
+}
+
+.calexp{
+    background-color: #4CAF50;
+    border: 2px solid red;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 20px;
+    width:50%;
+}
+.calexp:hover{
+    background-color: red;
+    color:white;
+}
+.table1{
+    width:100%;
+    text-align: center;
+}
+.rr{
+    visibility: hidden;
+}
+.rr12{
+    visibility: visible;
+}

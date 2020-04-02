@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <meta charset="utf-8">
+
+    <script type="text/javascript" src="main.js"></script>
+    <title>Universal Booking System</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="img"><img src="ubs.png" height=auto width='250'></div>
+
+      <div class="hh"><h1 align="center">Universal Booking System</h1></div>
+
+      <div class="lgn">
+        <button class="log1">Log In/Sign Up</button>
+      </div>
+    </div>
+    <div class="panel">
+        <div class="drp_dn">
+          <button class="drp_btn">Home</button>
+        </div>
+        <div class="drp_dn">
+          <button class="drp_btn">Train Tickets</button>
+            <div class="drp_dnc">
+              <a style="white-space:nowrap;" class="l1" href="#general" >General</a>
+              <a style="white-space:nowrap;" class="l1" href="#tatkal">Tatkal</a>
+              <a style="white-space:nowrap;" class="l1" href="#p_tatkal">Premium Tatkal</a>
+            </div>
+           </div>
+        <div class="drp_dn">
+          <button class="drp_btn">Flight Tickets</button>
+            <div class="drp_dnc">
+              <a style="white-space:nowrap;" class="l1" href="#owt">One Way Trip</a> 
+              <a style="white-space:nowrap;" class="l1" href="#rt">Round Trip</a>
+            </div>
+        </div>     
+        <div class="drp_dn">
+          <button class="drp_btn">Contact Us</button>
+        </div>      
+        <div class="drp_dn">
+          <button class="drp_btn" >My Account</button>
+        </div>
+      </div>  
+    
+       <div class="marquee1">
+    <br>
+    <marquee behaviour=scroll direction="left" scrollamount=10 ><h2>Welcome! To The Universal Booking System</h2></marquee> 
+    
+    <marquee behavior="scroll" direction="right"><h2>One Place Solution For All Your Bookings Of Trains, Flights.</h2></marquee>
+
+      </div>
+
+    <form class="f1">
+      <h3 class='head1'>Book Domestic Flights</h3>
+      <h3 class="rdo">
+      <input type="radio"  name="Single Way Trip" id="swt" onclick="check1()">One Way Trip
+
+      <input type="radio" name="Round Trip" id="rwt" onclick=check2()>Round Trip
+      </h3>
+      <br><br>
+      <h3>From: 
+      <!--<input type ="text" name="from" placeholder="From" id="from">-->
+      <select name="from" id="from">
+        <option value="">From</option>
+        <option value="del" id="del">New Delhi</option>
+        <option value="bom" id='bom'>Mumbai</option>
+      </select>
+      
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;
+      To:
+      <!--<input type="text" name="to" placeholder="To" id="form">-->
+      <select name="to" id="to" >
+        <option value="">To</option>
+        <option value="del" id='del'>New Delhi</option>
+        <option value="bom" id='bom'>Mumbai</option>
+      </select>
+      &emsp;&emsp;&emsp;&emsp;
+      </h3>
+      <h3>
+      Journey Date:
+      <input type="date" name="date" placeholder="Journey Date" id="j_date">
+      &emsp;&emsp;&emsp;&emsp;
+      Return Date:
+      <input type="date" name="return date" placeholder="Return Date" id="r_date">
+      &emsp;&emsp;&emsp;&emsp;
+      </h3>
+      <h3>
+      Total Number of Passenger(s):
+      <input type="number" name="nop" placeholder="No. Of Passenger(s)" min=1 value=1 id="nop" readonly> 
+      &emsp;&emsp;&emsp;&emsp;
+      Adults:
+      <input type="number" name="adult" id="adult" placeholder="Adults" min=0>
+      &emsp;&emsp;&emsp;&emsp;
+      Children:
+      <input type="number" name="child" id="child" placeholder="Children" min=0 oninput="nop.value=parseInt(adult.value)+parseInt(child.value)">
+      </h3>
+      <br>
+      
+     <center><input type="button" value="Calulate Expense" onclick=fun1() class="calexp"></center>
+    
+      <br><br>
+      <h2 align="center">Your Booking Details ::&#8628;</h2>
+      <table border=5 cellspacing=20 cellpadding=10 align="center" bordercolor="Black" class="table1"> 
+        <tr>
+          <th>Travelling From</th>
+          <th>Travelling To</th>
+          <th>Travelling Date</th>
+          <th>No. of Passenger(s)</th>
+          <th>Fare Per Passenger</th>
+          <th>Total Fare</th>
+          <th>Tax :: GST @12%</th>
+          <th>Final Amount</th>
+        </tr>
+        <tr>
+          <td id="tf"></td>
+          <td id="tt"></td>
+          <td id="td"></td>
+          <td id="fnop"></td>
+          <td id="epp"></td>
+          <td id="exp"></td>
+          <td id="tax"></td>
+          <td id="fa"></td>
+        </tr>
+        <tr id="rr">
+          <td id="tf1"></td>
+          <td id="tt1"></td>
+          <td id="td1"></td>
+          <td id="fnop1"></td>
+          <td id="epp1"></td>
+          <td id="exp1"></td>
+          <td id="tax1"></td>
+          <td id="fa1"></td>
+        </tr>
+      </table>
+
+      
+    </form>
+  </body>
+</html>
