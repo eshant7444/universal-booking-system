@@ -10,7 +10,12 @@ function check2(){
         document.getElementById("rr").className = 'rr12';
       }
 }
-
+function chgbk(){
+    document.getElementById("ff").className="f1";
+}
+function chgbk1(){
+    document.getElementById("ff").className="f2";
+}
 function fun1()
 {
 var f=document.getElementById('from');

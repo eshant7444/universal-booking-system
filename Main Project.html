@@ -14,7 +14,7 @@
       <div class="hh"><h1 align="center">Universal Booking System</h1></div>
 
       <div class="lgn">
-        <button class="log1">Log In/Sign Up</button>
+        <button class="log1" onclick="window.location.href='login.html'">Log In/Sign Up</button>
       </div>
     </div>
     <div class="panel">
@@ -52,13 +52,18 @@
 
       </div>
 
-    <form class="f1">
-      <h3 class='head1'>Book Domestic Flights</h3>
+    <form class="f1" id="ff">
+      <h3 class='head1'>Book Domestic Flights and Train Tickets</h3>
       <h3 class="rdo">
       <input type="radio"  name="Single Way Trip" id="swt" onclick="check1()">One Way Trip
 
       <input type="radio" name="Round Trip" id="rwt" onclick=check2()>Round Trip
       </h3>
+      <h2 class="rdo">
+      <input type="radio" name="flight" id="flight" onclick="chgbk()">Flight Tickets
+
+      <input type="radio" name="train" id="train" onclick="chgbk1()">Train Tickets
+      </h2>
       <br><br>
       <h3>From: 
       <!--<input type ="text" name="from" placeholder="From" id="from">-->
@@ -137,5 +142,13 @@
 
       
     </form>
+    
+    <hr>
+    <footer>
+      
+      Develop By ::
+      <a href="https://www.linkedin.com/in/eshant-aggarwal/"><img src="linkedin.png" width=50 height=auto></a>
+      <a href="https://github.com/eshant7444"></a><img src="github.png" width=50 height=auto></a>
+    </footer>
   </body>
 </html>
