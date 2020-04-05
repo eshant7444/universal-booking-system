@@ -19,7 +19,7 @@
     </div>
     <div class="panel">
         <div class="drp_dn">
-          <button class="drp_btn">Home</button>
+          <button class="drp_btn" onclick="window.location.href='Main Project.html'">Home</button>
         </div>
         <div class="drp_dn">
           <button class="drp_btn">Train Tickets</button>
@@ -51,3 +51,65 @@
     <marquee behavior="scroll" direction="left"><h2>Here,You can register yourself and use the Username and Password to login into the World of Booking System</h2></marquee>
 
       </div>
+      <div class="reg_main">
+        <h1 align=center class="reg">
+          Registration
+        </h1>
+        <form class="flog">
+          First Name *: 
+          <input type="text" class="fname" placeholder="First Name" id="fname" required  >
+          Last Name *:
+          <input type="text" class="lname" placeholder="Last Name" id ="lname" required>
+          <br>
+          E-mail *:
+          <input type="email" class="email" placeholder="E-mail" id="email" required>
+          Phone Number *:
+          <input type="tel" class="tel" placeholder="Mobile Number" maxlength="10" minlength="10" required>
+          <br>
+          Password *:
+          <input type="password" class="pass" placeholder="Password" minlength="8" id="pass" required>
+          DOB:
+          <input type="date" class="dob">
+          <br>
+          <input type="submit" class="sub" onclick="store()">
+          
+
+        </form>
+        <pre>
+          Note--> 1) Fields Marked with (*) are compulsory to fill.
+                  2) Your E-mail will be used as the Username to login into your account.
+                  3) Password should be of minimum 8 characters, also remember it as their is no way to reset it.
+          </pre>
+      </div>
+      <div class="log_main">
+        <h1 align=center class="login">
+          Log In
+        </h1>
+        <form class="flog">
+          Login Credentials : Username
+          <input type="text" id="log_c" value="123@admin" readonly>
+          Password:
+          <input type="text" id="logc1"  value="admin123" readonly>
+          <br>
+          Username *:
+          <input type="email" class="lemail" placeholder="E-mail" id="lemail" required>
+          <br>
+          Password *:
+          <input type='password' class="lpass" placeholder="Password" id="lpass" required>
+          <br>
+          <input type="submit" value="Log In" class="sub" onclick="log_chk()">
+
+
+        </form>
+      </div>
+
+
+
+
+      <hr>
+      <footer>
+      
+        Developed By ::
+        <a href="https://www.linkedin.com/in/eshant-aggarwal/"><img src="linkedin.png" width=50 height=auto></a>
+        <a href="https://github.com/eshant7444"></a><img src="github.png" width=50 height=auto></a>
+      </footer>

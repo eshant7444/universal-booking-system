@@ -19,7 +19,7 @@
     </div>
     <div class="panel">
         <div class="drp_dn">
-          <button class="drp_btn">Home</button>
+          <button class="drp_btn" onclick="window.location.href='Main Project.html'">Home</button>
         </div>
         <div class="drp_dn">
           <button class="drp_btn">Train Tickets</button>
@@ -51,7 +51,7 @@
     <marquee behavior="scroll" direction="right"><h2>One Place Solution For All Your Bookings Of Trains, Flights.</h2></marquee>
 
       </div>
-
+      
     <form class="f1" id="ff">
       <h3 class='head1'>Book Domestic Flights and Train Tickets</h3>
       <h3 class="rdo">
@@ -64,7 +64,7 @@
 
       <input type="radio" name="train" id="train" onclick="chgbk1()">Train Tickets
       </h2>
-      <br><br>
+      <br>
       <h3>From: 
       <!--<input type ="text" name="from" placeholder="From" id="from">-->
       <select name="from" id="from">
@@ -92,20 +92,21 @@
       &emsp;&emsp;&emsp;&emsp;
       </h3>
       <h3>
-      Total Number of Passenger(s):
-      <input type="number" name="nop" placeholder="No. Of Passenger(s)" min=1 value=1 id="nop" readonly> 
-      &emsp;&emsp;&emsp;&emsp;
       Adults:
       <input type="number" name="adult" id="adult" placeholder="Adults" min=0>
       &emsp;&emsp;&emsp;&emsp;
       Children:
       <input type="number" name="child" id="child" placeholder="Children" min=0 oninput="nop.value=parseInt(adult.value)+parseInt(child.value)">
+      <br><br>
+      Total Number of Passenger(s):
+      <input type="number" name="nop" placeholder="No. Of Passenger(s)" min=1 value=1 id="nop" readonly> 
+      &emsp;&emsp;&emsp;&emsp;
       </h3>
       <br>
       
      <center><input type="button" value="Calulate Expense" onclick=fun1() class="calexp"></center>
     
-      <br><br>
+      <br>
       <h2 align="center">Your Booking Details ::&#8628;</h2>
       <table border=5 cellspacing=20 cellpadding=10 align="center" bordercolor="Black" class="table1"> 
         <tr>
@@ -146,7 +147,7 @@
     <hr>
     <footer>
       
-      Develop By ::
+      Developed By ::
       <a href="https://www.linkedin.com/in/eshant-aggarwal/"><img src="linkedin.png" width=50 height=auto></a>
       <a href="https://github.com/eshant7444"></a><img src="github.png" width=50 height=auto></a>
     </footer>

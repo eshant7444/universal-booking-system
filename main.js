@@ -1,3 +1,4 @@
+
 function check1(){
     if (document.getElementById("swt").checked == true){
         document.getElementById("r_date").disabled=true;
@@ -77,4 +78,36 @@ document.getElementById("tax1").innerHTML="INR "+tax;
 
 var totalexp=total+tax;
 document.getElementById("fa1").innerHTML="INR "+totalexp;
+}
+
+function store(){
+ 
+    var fname=document.getElementById("fname").value;
+    var lname=document.getElementById("lname").value;
+    var email=document.getElementById("email").value;
+    var pass=document.getElementById("pass").value;
+    document.getElementById("log_c").value=email;
+    document.getElementById("log_c1").value=pass;
+    alert("Thank You For Registration"+fname+" "+lname);
+
+}
+
+function log_chk(){
+    var lemail=document.getElementById("lemail").value;
+    var lpass=document.getElementById("lpass").value;
+
+    var femail=document.getElementById("log_c").value;
+    var fpass=document.getElementById("log_c1").value;
+
+    if(lemail==femail){
+        if(lpass==fpass){
+            alert("Login Succesfully");
+        }
+        else{
+            alert("Password is Invalid");
+        }
+    }
+    else{
+        alert("Username is Invalid");
+    }
 }
