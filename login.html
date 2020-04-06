@@ -9,9 +9,9 @@
   </head>
   <body>
     <div class="main">
-      <div class="img"><img src="ubs.png" height=auto width='250'></div>
+      <div class="img"><img src="ubs.png" height=auto width='250'onclick="window.location.href='Main Project.html'"></div>
 
-      <div class="hh"><h1 align="center">Universal Booking System</h1></div>
+      <div class="hh"><h1 align="center" onclick="window.location.href='Main Project.html'">Universal Booking System</h1></div>
 
       <div class="lgn">
         <button class="log1">Log In/Sign Up</button>
@@ -37,10 +37,10 @@
             </div>
         </div>     
         <div class="drp_dn">
-          <button class="drp_btn">Contact Us</button>
+          <button class="drp_btn"  onclick="window.location.href='#footer'">Contact Us</button>
         </div>      
         <div class="drp_dn">
-          <button class="drp_btn" >My Account</button>
+          <button class="drp_btn" onclick="alert('Please first Log In into your account (if you are Registered) and Incase you are Not a Registered User, please register yourself first. Please press OK button to continue');alert('Currently you are on Login and SignUp page of this Website itself. Please press OK button to continue');">My Account</button>
         </div>
       </div>  
     
@@ -57,7 +57,7 @@
         </h1>
         <form class="flog">
           First Name *: 
-          <input type="text" class="fname" placeholder="First Name" id="fname" required  >
+          <input type="text" class="fname" placeholder="First Name" id="fname" required >
           Last Name *:
           <input type="text" class="lname" placeholder="Last Name" id ="lname" required>
           <br>
@@ -71,33 +71,40 @@
           DOB:
           <input type="date" class="dob">
           <br>
-          <input type="submit" class="sub" onclick="store()">
-          
-
+          <input type="button" value="Register" class="sub" onclick="store();window.location.href='#logd'">
         </form>
-        <pre>
+          <pre class="pre1">
           Note--> 1) Fields Marked with (*) are compulsory to fill.
                   2) Your E-mail will be used as the Username to login into your account.
                   3) Password should be of minimum 8 characters, also remember it as their is no way to reset it.
           </pre>
-      </div>
-      <div class="log_main">
-        <h1 align=center class="login">
+        </div>
+          <div class="log_main" id="logd">
+          <h1 align=center class="login">
           Log In
-        </h1>
-        <form class="flog">
-          Login Credentials : Username
-          <input type="text" id="log_c" value="123@admin" readonly>
-          Password:
-          <input type="text" id="logc1"  value="admin123" readonly>
+          </h1>
+          <table width=50% height=auto align=center border=2 cellspacing=20 cellpadding=10 align="center" bordercolor="Black" class="table2">
+            <caption >Login Credentials :: </caption>
+            <tr>
+              <th>Username</th>
+              <th>Password</th>
+            </tr>
+            <tr>
+              <td id="du">123@admin</td>
+              <td id="dp">admin123</td>
+            </tr>
+            
+          </table>
           <br>
+          <form class="flog">
           Username *:
-          <input type="email" class="lemail" placeholder="E-mail" id="lemail" required>
+          <input type="email" class="lemail" placeholder="E-mail" id="lemail">
           <br>
           Password *:
-          <input type='password' class="lpass" placeholder="Password" id="lpass" required>
+          <input type='password' class="lpass" placeholder="Password" id="lpass">
           <br>
-          <input type="submit" value="Log In" class="sub" onclick="log_chk()">
+          <input type="button" value="Log In" class="sub" onclick="log_chk()">
+          <br><br>
 
 
         </form>
@@ -106,10 +113,18 @@
 
 
 
-      <hr>
-      <footer>
-      
+      <hr class="mhr">
+      <footer id="footer">
+        <h1>Contact Us</h1>
+        <hr align="center" width=10% class="hr1">
+        <br>
+        For More Information E-mail Us at :: info@universalbookingsystem
+        <br><br>
+        Contact Numbers :: +91 9898989898 , 011-26789535
+        <br><br>
+        &copy; 2020-21 Eshant-Aggarwal  K19CD
+        <br><br>
         Developed By ::
         <a href="https://www.linkedin.com/in/eshant-aggarwal/"><img src="linkedin.png" width=50 height=auto></a>
-        <a href="https://github.com/eshant7444"></a><img src="github.png" width=50 height=auto></a>
+        <a href="https://github.com/eshant7444"><img src="github.png" width=50 height=auto></a>
       </footer>

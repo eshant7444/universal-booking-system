@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="main">
-      <div class="img"><img src="ubs.png" height=auto width='250'></div>
+      <div class="img"><img src="ubs.png" height=auto width='250' onclick="window.location.href='Main Project.html'"></div>
 
       <div class="hh"><h1 align="center">Universal Booking System</h1></div>
 
@@ -37,10 +37,10 @@
             </div>
         </div>     
         <div class="drp_dn">
-          <button class="drp_btn">Contact Us</button>
+          <button class="drp_btn" onclick="window.location.href='#footer'">Contact Us</button>
         </div>      
         <div class="drp_dn">
-          <button class="drp_btn" >My Account</button>
+          <button class="drp_btn" onclick="alert('Please first Log In into your account (if you are Registered) and Incase you are Not a Registered User, please register yourself first. Please press OK button to continue');alert('You will be redirecting to the Login and SignUp Page of this Website. Please press OK button to continue'); window.location.href='login.html';">My Account</button>
         </div>
       </div>  
     
@@ -49,10 +49,25 @@
     <marquee behaviour=scroll direction="left" scrollamount=10 ><h2>Welcome! To The Universal Booking System</h2></marquee> 
     
     <marquee behavior="scroll" direction="right"><h2>One Place Solution For All Your Bookings Of Trains, Flights.</h2></marquee>
+    </div>
 
-      </div>
-      
-    <form class="f1" id="ff">
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+      <form class="f1" id="ff">
       <h3 class='head1'>Book Domestic Flights and Train Tickets</h3>
       <h3 class="rdo">
       <input type="radio"  name="Single Way Trip" id="swt" onclick="check1()">One Way Trip
@@ -71,6 +86,14 @@
         <option value="">From</option>
         <option value="del" id="del">New Delhi</option>
         <option value="bom" id='bom'>Mumbai</option>
+        <option value="bang" id='bang'>Bangaluru</option>
+        <option value="chen" id="chen">Chennai</option>
+        <option value="kol" id='kol'>Kolkata</option>
+        <option value="hyd" id='hyd'>Hyderabad</option>
+        <option value="ker" id='ker'>Kerala</option>
+        <option value="ahm" id='ahm'>Ahmedabad</option>
+        <option value="pun" id='pun'>Pune</option>
+        <option value="goa" id='goa'>Goa</option>
       </select>
       
       &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;
@@ -80,6 +103,14 @@
         <option value="">To</option>
         <option value="del" id='del'>New Delhi</option>
         <option value="bom" id='bom'>Mumbai</option>
+        <option value="bang" id='bang'>Bangaluru</option>
+        <option value="chen" id="chen">Chennai</option>
+        <option value="kol" id='kol'>Kolkata</option>
+        <option value="hyd" id='hyd'>Hyderabad</option>
+        <option value="ker" id='ker'>Kerala</option>
+        <option value="ahm" id='ahm'>Ahmedabad</option>
+        <option value="pun" id='pun'>Pune</option>
+        <option value="goa" id='goa'>Goa</option>
       </select>
       &emsp;&emsp;&emsp;&emsp;
       </h3>
@@ -105,10 +136,12 @@
       <br>
       
      <center><input type="button" value="Calulate Expense" onclick=fun1() class="calexp"></center>
+     <pre>
+       Note --> Always Press the Calculate Expense Button to update the below table value after making any change in preference above. 
+     </pre>
     
-      <br>
-      <h2 align="center">Your Booking Details ::&#8628;</h2>
-      <table border=5 cellspacing=20 cellpadding=10 align="center" bordercolor="Black" class="table1"> 
+      <h2 align="center">Your Booking Details and Tax Breakup Details ::&#8628;</h2>
+      <table border=5 cellspacing=20 cellpadding=10 align="center" bordercolor="Black" class="table1" id="table1"> 
         <tr>
           <th>Travelling From</th>
           <th>Travelling To</th>
@@ -139,17 +172,33 @@
           <td id="tax1"></td>
           <td id="fa1"></td>
         </tr>
+        <tr>
+          <td colspan="4" id="ftotal">Total Expenses w.r.t Selection</td>
+          <td id="fepp">INR 0</td>
+          <td id="fexp">INR 0</td>
+          <td id="ftax">INR 0</td>
+          <td id="ffa1">INR 0</td>
+        </tr>
       </table>
+
 
       
     </form>
     
-    <hr>
-    <footer>
-      
+    <hr class='mhr'>
+    <footer id="footer">
+      <h1>Contact Us</h1>
+      <hr align="center" width=10% class="hr1">
+      <br>
+      For More Information E-mail Us at :: info@universalbookingsystem
+      <br><br>
+      Contact Numbers :: +91 9898989898 , 011-26789535
+      <br><br>
+      &copy; 2020-21 Eshant-Aggarwal K19CD
+      <br><br>
       Developed By ::
       <a href="https://www.linkedin.com/in/eshant-aggarwal/"><img src="linkedin.png" width=50 height=auto></a>
-      <a href="https://github.com/eshant7444"></a><img src="github.png" width=50 height=auto></a>
+      <a href="https://github.com/eshant7444"><img src="github.png" width=50 height=auto></a>
     </footer>
   </body>
 </html>

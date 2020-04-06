@@ -2,7 +2,9 @@
     padding:0px;
     
 }
-
+button{
+    cursor: pointer;
+}
 .main{
     display: flex;
     justify-content: space-around;
@@ -13,6 +15,7 @@
     position: relative;
     display: block;
     padding: 7px 0 0 0;
+    cursor: pointer;
     
 }
 .img:hover{
@@ -23,6 +26,7 @@
     font-size:30px;
     display: inline-block;
     position: relative;
+    cursor: pointer;
 }
 .hh:hover{
     color: indigo;
@@ -57,7 +61,7 @@
     position: relative;
     color: blue;
     display:flex;
-    justify-content: space-around;   
+    justify-content: space-around;  
     
 }
 .drp_btn{
@@ -67,6 +71,7 @@
     color:blue;
     border:none;
     cursor: pointer;
+    font-family: 'calibri';
 }    
 .drp_btn:hover{
     background-color: black;
@@ -110,13 +115,14 @@
     color:red;
     width: 100%;
     height: auto;
+    font-family: 'calibri';
+    
 }
 .f1{
 border:2;
 width:100%;
 height:auto;
 background-color:#E4F9F5;
-opacity:0.6;
 background-image: url(1.jpg);
 font-family: 'comic sans ms';
 background-size:cover;
@@ -126,7 +132,10 @@ justify-content: space-around;
 font-size: 20px;
 color: whitesmoke;
 text-shadow: 1.5px 1.5px rgb(208, 14, 233);
+margin-top: 0;
+border-top: 0;
 }
+
 .f1 input,.f2 input{
     padding: 5px 0px 5px 5px;
     margin: 10 10 0 10;
@@ -138,7 +147,6 @@ text-shadow: 1.5px 1.5px rgb(208, 14, 233);
     width:100%;
     height:auto;
     background-color:#E4F9F5;
-    opacity:0.6;
     background-image: url(2.jpg);
     font-family: 'comic sans ms';
     background-size:cover;
@@ -147,7 +155,7 @@ text-shadow: 1.5px 1.5px rgb(208, 14, 233);
     justify-content: space-around;
     font-size: 20px;
     color: whitesmoke;
-    text-shadow: 1.5px 1.5px rgb(208, 14, 233);
+    text-shadow: 1.5px 1.5px red;
 }
 .head1{
     font-family: "Segoe Script" ;
@@ -168,6 +176,7 @@ text-shadow: 1.5px 1.5px rgb(208, 14, 233);
     border-radius: 12px;
     font-size: 20px;
     width:50%;
+    cursor: pointer;
 }
 .calexp:hover{
     background-color: red;
@@ -177,6 +186,13 @@ text-shadow: 1.5px 1.5px rgb(208, 14, 233);
     width:100%;
     text-align: center;
     color: whitesmoke;
+    
+}
+.table2{
+    color: white;
+    text-shadow: 1.5px 1.5px black;
+    font-family: 'comic sans ms';
+    text-align: center;
 }
 .rr{
     visibility: hidden;
@@ -193,7 +209,7 @@ text-shadow: 1.5px 1.5px rgb(208, 14, 233);
     border:2;
     width:100%;
     height:auto;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'comic sans ms';
     text-align: center;    
 
 }
@@ -217,7 +233,45 @@ text-shadow: 1.5px 1.5px rgb(208, 14, 233);
     width: 30%;
 
 }
+.log_main{
+    background-color: burlywood;
+    background-size: cover;
+    text-shadow: 1.5px 1.5px whitesmoke;
+    color: black;
+    background-image: url(4.jpg);
+}
+
+.reg_main{
+    background-color: hotpink;
+    background-image: url(4.jpg);
+    background-size: cover;
+    text-shadow: 1.5px 1.5px black;
+    color: gold;
+    
+    
+}
+.pre1{
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.hr1{
+    color: white ;
+    border: solid 2px;
+    border-radius: 60%;
+
+}
+.mhr{
+    color: red;
+    border: 2px;
+    border-style: solid;
+
+}
 footer{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align:center;
+    background-color: rgb(5, 57, 90);
+    color: whitesmoke;
+    padding: 5px;
+    margin: 5px;
 }
+
