@@ -159,8 +159,8 @@ function log_chk(){
     if(lemail==femail){
         if(lpass==fpass){
             alert("Login Succesfully");
-            alert('Now as Reward you will be redirected to Most Popular Site');
-            window.open('https://www.google.co.in','_blank');
+            alert('Now You will be redirected to booking page.');
+            window.open('Main Project.html#ff','_blank');
         }
         else{
             alert("Password is Invalid");
