@@ -1,3 +1,22 @@
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); 
+}
 
 function check1(){
     if (document.getElementById("swt").checked == true){
@@ -115,7 +134,6 @@ else if(document.getElementById("swt").checked == true){
 }
 alert("Final Amount need to be pay by you : Rs. "+final);
 
-
 }
 
 function store(){
@@ -129,8 +147,6 @@ function store(){
     alert("Thank You For Registration "+fname+" "+lname+"Your Login Credentials are updated below. Press OK to continue.");
     alert("Now you will be directed to Log In section of this page.");
     
-
-
 }
 
 function log_chk(){
@@ -154,4 +170,3 @@ function log_chk(){
         alert("Username is Invalid");
     }
 }
-

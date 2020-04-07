@@ -7,7 +7,7 @@
     <script type="text/javascript" src="main.js"></script>
     <title>Universal Booking System</title>
   </head>
-  <body>
+  <body onload="showSlides()">
     <div class="main">
       <div class="img"><img src="ubs.png" height=auto width='250' onclick="window.location.href='Main Project.html'"></div>
 
@@ -22,7 +22,7 @@
           <button class="drp_btn" onclick="window.location.href='Main Project.html'">Home</button>
         </div>
         <div class="drp_dn">
-          <button class="drp_btn">Train Tickets</button>
+          <button class="drp_btn" onclick="window.location.href='#ff'"> Train Tickets</button>
             <div class="drp_dnc">
               <a style="white-space:nowrap;" class="l1" href="#general" >General</a>
               <a style="white-space:nowrap;" class="l1" href="#tatkal">Tatkal</a>
@@ -30,7 +30,7 @@
             </div>
            </div>
         <div class="drp_dn">
-          <button class="drp_btn">Flight Tickets</button>
+          <button class="drp_btn" onclick="window.location.href='#ff'">Flight Tickets</button>
             <div class="drp_dnc">
               <a style="white-space:nowrap;" class="l1" href="#owt">One Way Trip</a> 
               <a style="white-space:nowrap;" class="l1" href="#rt">Round Trip</a>
@@ -51,34 +51,55 @@
     <marquee behavior="scroll" direction="right"><h2>One Place Solution For All Your Bookings Of Trains, Flights.</h2></marquee>
     </div>
 
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <img src="6.png" style="width:100%">
+        <div class="text">Where will tomorrow take you?</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <img src="1.jpg" style="width:100%">
+        <div class="text">Excellence in Flight</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <img src="8.jpg" style="width:100%">
+        <div class="text">Lifeline of the Nation</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="2.jpg" style="width:100%">
+        <div class="text">If it matters to you, it matters to us.</div>
+      </div>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span>
+      </div>
 
 
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-      <form class="f1" id="ff">
+    <form class="f1" id="ff">
       <h3 class='head1'>Book Domestic Flights and Train Tickets</h3>
-      <h3 class="rdo">
-      <input type="radio"  name="Single Way Trip" id="swt" onclick="check1()">One Way Trip
-
-      <input type="radio" name="Round Trip" id="rwt" onclick=check2()>Round Trip
-      </h3>
       <h2 class="rdo">
       <input type="radio" name="flight" id="flight" onclick="chgbk()">Flight Tickets
 
       <input type="radio" name="train" id="train" onclick="chgbk1()">Train Tickets
       </h2>
+      <h3 class="rdo">
+        <input type="radio"  name="Single Way Trip" id="swt" onclick="check1()">One Way Trip
+  
+        <input type="radio" name="Round Trip" id="rwt" onclick=check2()>Round Trip
+        </h3>
       <br>
       <h3>From: 
       <!--<input type ="text" name="from" placeholder="From" id="from">-->
@@ -135,7 +156,7 @@
       </h3>
       <br>
       
-     <center><input type="button" value="Calulate Expense" onclick=fun1() class="calexp"></center>
+     <center><input type="button" value="Calulate Expense" onclick="fun1();window.location.href='#table1'" class="calexp"></center>
      <pre>
        Note --> Always Press the Calculate Expense Button to update the below table value after making any change in preference above. 
      </pre>
@@ -173,7 +194,7 @@
           <td id="fa1"></td>
         </tr>
         <tr>
-          <td colspan="4" id="ftotal">Total Expenses w.r.t Selection</td>
+          <td colspan="4" id="ftotal">Total Expenses as per your Selection</td>
           <td id="fepp">INR 0</td>
           <td id="fexp">INR 0</td>
           <td id="ftax">INR 0</td>
@@ -181,8 +202,6 @@
         </tr>
       </table>
 
-
-      
     </form>
     
     <hr class='mhr'>
@@ -196,9 +215,14 @@
       <br><br>
       &copy; 2020-21 Eshant-Aggarwal K19CD
       <br><br>
-      Developed By ::
-      <a href="https://www.linkedin.com/in/eshant-aggarwal/"><img src="linkedin.png" width=50 height=auto></a>
-      <a href="https://github.com/eshant7444"><img src="github.png" width=50 height=auto></a>
+      Developed By ::&emsp;
+      <a href="https://www.linkedin.com/in/eshant-aggarwal/"><img src="linkedin.png" width=50 height=auto alt="Eshant's LinkedIn" class="icons"></a>
+      &emsp;
+      <a href="https://github.com/eshant7444"><img src="github.png" alt="Eshant's GitHub"width=50 height=auto class="icons"></a>
+      &emsp;
+      <a href="https://twitter.com/AggarwalEshant"><img src="twitter.webp" alt="Eshant's Twitter" width="50" height="auto" class="icons"></a>
     </footer>
+
+
   </body>
 </html>
