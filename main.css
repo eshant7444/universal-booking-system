@@ -246,6 +246,7 @@ border-top: 0;
     border-radius: 12px;
     font-size: 20px;
     width:50%;
+    height:50px;
     cursor: pointer;
 }
 .calexp:hover{
