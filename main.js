@@ -72,6 +72,10 @@ else{
     alert("Please Enter City");
     return;
 }
+if(from==to){
+    alert('Journey From and Journey To Cities Selection can not be same');
+    return;
+}
 var num=document.getElementById("nop").value;
 
 var total;
