@@ -164,7 +164,7 @@ function log_chk(){
         if(lpass==fpass){
             alert("Login Succesfully");
             alert('Now You will be redirected to booking page.');
-            window.open('Main Project.html#ff','_blank');
+            window.open('index.html#ff','_blank');
         }
         else{
             alert("Password is Invalid");
